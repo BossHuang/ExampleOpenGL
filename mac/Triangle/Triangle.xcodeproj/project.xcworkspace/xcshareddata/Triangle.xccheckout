@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>29E57B8A-A3A6-46F7-8F2E-8F4ECF81A7A1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Triangle</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>71E3E6E7-96F4-4971-BEBB-EA23B7ABD3DE</key>
+		<string>https://github.com/BossHuang/ExampleOpenGL.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>mac/Triangle/Triangle.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>71E3E6E7-96F4-4971-BEBB-EA23B7ABD3DE</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BossHuang/ExampleOpenGL.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>71E3E6E7-96F4-4971-BEBB-EA23B7ABD3DE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>71E3E6E7-96F4-4971-BEBB-EA23B7ABD3DE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OpenGLSample</string>
+		</dict>
+	</array>
+</dict>
+</plist>
