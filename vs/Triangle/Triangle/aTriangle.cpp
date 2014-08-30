@@ -1,61 +1,61 @@
 
-//导入库文件
-#include <GLTools.h>
-#include <GLShaderManager.h>
-//导入对应平台的头文件
+//import library file 
+#include <GLTools.h>           //OpenGL toolkit
+#include <GLShaderManager.h>    //Shader Manager
+//import platform file
 #ifdef _APPLE_
-#include <glut.h>
+#include <glut.h>   //OS
 #else
-#define FREEGLUT_STATIC
+#define FREEGLUT_STATIC   //windows
 #include <GL/glut.h>
 #endif
 
 GLBatch triangleBatch;
-GLShaderManager  shaderManager;
+GLShaderManager  shaderManager;  
 
-void ChangeSize(int w, int h)   //窗口维度被修改时调用
+void ChangeSize(int w, int h)   //just be created or change window size, this will be called
 {
 	glViewport(0,0,w,h);
 }
 
 void SetupRC()   //预加载纹理、建立几何图形、渲染器等操作
 {
-	glClearColor(0.25f, 0.25f, 0.25f, 1.0f);   //设置背景色
+	glClearColor(0.25f, 0.25f, 0.25f, 1.0f);   //background
 
-	//着色器初始化
+	//initialize the ShaderManager
 	shaderManager.InitializeStockShaders();
 
-	//画三角形
+	//a triangle
 	GLfloat vVer[]={-0.5f, 0.0f, 0.0f,
-		0.0f, 0.5f, 0.0f,
-		0.5f, 0.0f, 0.0f,};
-	//批量渲染三角形
-	triangleBatch.Begin(GL_TRIANGLES,3);//开始
-	triangleBatch.CopyVertexData3f(vVer);//三角形顶点数据
-	triangleBatch.End();//结束
+		             0.0f, 0.5f, 0.0f,
+		             0.5f, 0.0f, 0.0f};
+	//batch shader triangle
+	triangleBatch.Begin(GL_TRIANGLES,3);//begin
+	triangleBatch.CopyVertexData3f(vVer);//Vertex's data of triangle
+	triangleBatch.End();//end
 }
 
-//画场景
+//draw scene
 void RenderScene(void)
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); //每个场景重画前的情况，颜色、深度、图案
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); //clear the window with curent clearing color
 
 	GLfloat vRed[] = {1.0f, 0.0f, 0.0f, 1.0f};  //设置三角形的填充颜色
-	shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vRed);   //使用着色器
-	triangleBatch.Draw();  //画三角形
+	shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vRed);   //use shader manager
+	triangleBatch.Draw();  //draw triangle
 
 	glutSwapBuffers();  //设置双缓冲区渲染环境
 }
 
-//主函数
+//main
 int main(int argc, char* argv[])
 {
 	gltSetWorkingDirectory(argv[0]);//设置当前工作目录
 	glutInit(&argc,argv);   //传输命令行参数并初始化程序
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH  | GLUT_STENCIL);   //选择窗口的显示模式
-	glutInitWindowSize(800,600);    //初始化窗口大小
-	glutCreateWindow("Triangle");   //创建窗口
-	glutReshapeFunc(ChangeSize);   //窗口维度被更改的时候被调用
+	glutInitWindowSize(800,600);    //initialize window size
+	glutCreateWindow("Triangle");   //create window
+	glutReshapeFunc(ChangeSize);   //when size of window be changed, will be called 
 	glutDisplayFunc(RenderScene);
 
 	GLenum err = glewInit();
