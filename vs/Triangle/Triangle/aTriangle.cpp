@@ -3,7 +3,7 @@
 #include <GLTools.h>           //OpenGL toolkit
 #include <GLShaderManager.h>    //Shader Manager
 //import platform file
-#ifdef _APPLE_
+#ifdef __APPLE__
 #include <glut.h>   //OS
 #else
 #define FREEGLUT_STATIC   //windows

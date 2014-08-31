@@ -1,7 +1,7 @@
 //a square can be move by arrow key moments
 #include <GLTools.h>
 #include <GLShaderManager.h>
-#ifdef _APPLE_
+#ifdef __APPLE__
 #include <glut/glut.h>
 #else
 #define FREEGLUT_STATIC
