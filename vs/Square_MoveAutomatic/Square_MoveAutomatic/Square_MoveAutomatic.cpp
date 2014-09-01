@@ -1,3 +1,6 @@
+//A square can move automatically 
+//Can use arrow key to change the direct of move when moving
+//And enter F1 can make the square back to position of begin
 #include <GLTools.h>
 #include <GLShaderManager.h>
 #ifdef __APPLE__
