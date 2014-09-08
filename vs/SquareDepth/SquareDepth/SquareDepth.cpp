@@ -1,4 +1,4 @@
-
+//A square can rotate around the x axis
 #include <GLTools.h>
 #include <GLShaderManager.h>
 #include <math3d.h>
