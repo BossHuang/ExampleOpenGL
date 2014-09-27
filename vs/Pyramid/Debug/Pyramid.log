@@ -1,15 +1,11 @@
-﻿生成启动时间为 2014/9/26 23:43:38。
+﻿生成启动时间为 2014/9/27 23:13:20。
      1>项目“E:\GitHub\ExampleOpenGL\vs\Pyramid\Pyramid.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\Pyramid.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Pyramid.cpp
          Pyramid.cpp
-     1>e:\github\exampleopengl\vs\pyramid\pyramid.cpp(57): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-     1>e:\github\exampleopengl\vs\pyramid\pyramid.cpp(83): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-     1>e:\github\exampleopengl\vs\pyramid\pyramid.cpp(88): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-     1>e:\github\exampleopengl\vs\pyramid\pyramid.cpp(93): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-     1>e:\github\exampleopengl\vs\pyramid\pyramid.cpp(98): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>e:\github\exampleopengl\vs\pyramid\pyramid.cpp(54): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
@@ -39,4 +35,4 @@
 
 生成成功。
 
-已用时间 00:00:01.72
+已用时间 00:00:01.76
