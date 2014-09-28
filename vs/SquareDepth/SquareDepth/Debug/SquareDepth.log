@@ -1,11 +1,14 @@
-﻿生成启动时间为 2014/9/16 15:39:56。
+﻿生成启动时间为 2014/9/28 20:30:12。
      1>项目“E:\GitHub\ExampleOpenGL\vs\SquareDepth\SquareDepth\SquareDepth.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\SquareDepth.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SquareDepth.cpp
          SquareDepth.cpp
-     1>e:\github\exampleopengl\vs\squaredepth\squaredepth\squaredepth.cpp(40): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>e:\github\exampleopengl\vs\squaredepth\squaredepth\squaredepth.cpp(75): warning C4305: “参数”: 从“double”到“float”截断
+     1>e:\github\exampleopengl\vs\squaredepth\squaredepth\squaredepth.cpp(77): warning C4305: “参数”: 从“double”到“float”截断
+     1>e:\github\exampleopengl\vs\squaredepth\squaredepth\squaredepth.cpp(79): warning C4305: “参数”: 从“double”到“float”截断
+     1>e:\github\exampleopengl\vs\squaredepth\squaredepth\squaredepth.cpp(81): warning C4305: “参数”: 从“double”到“float”截断
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
@@ -35,4 +38,4 @@
 
 生成成功。
 
-已用时间 00:00:04.21
+已用时间 00:00:02.22
